@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso e Política de Privacidade</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Termos de Uso e Política de Privacidade</h1>
+        
+        <div class="terms">
+            <h2>Termos de Uso</h2>
+            <p>Termos de Uso para o Jornal Online
+                Os Termos de Uso abaixo descrevem as condições sob as quais você pode acessar e utilizar o nosso site, garantindo a proteção tanto dos nossos direitos quanto dos seus.
+                
+               
+ 1. Aceitação dos Termos
+                Ao acessar ou utilizar o nosso site, você concorda em cumprir e se submeter aos Termos de Uso e a todas as condições descritas neste documento. Caso não concorde com qualquer uma das disposições, pedimos que não utilize os serviços oferecidos no site. Estes termos podem ser alterados sem aviso prévio, e recomendamos que você os leia periodicamente para se manter atualizado.
+                
+ 2. Alterações nos Termos
+                Nos reservamos o direito de modificar ou atualizar os Termos de Uso a qualquer momento, sem necessidade de aviso prévio. A versão mais recente sempre estará disponível no nosso site, e seu uso continuado após qualquer alteração constitui aceitação das novas condições.
+                
+3. Uso Permitido do Site
+                Este site foi desenvolvido para oferecer informações jornalísticas e notícias atualizadas aos usuários. Você pode acessar, ler e interagir com o conteúdo publicado, desde que o faça de maneira ética, legal e sem prejudicar a operação do site. O uso do nosso conteúdo para fins comerciais, distribuição não autorizada ou qualquer outra atividade que viole os direitos de propriedade intelectual não é permitido.
+                
+
+ 4. Propriedade Intelectual
+                Todo o conteúdo disponível no nosso site, incluindo, mas não se limitando a, textos, imagens, vídeos, gráficos, logotipos, e marcas registradas, é de propriedade exclusiva do nosso jornal e está protegido por leis de direitos autorais e marcas registradas. A reprodução ou distribuição de qualquer conteúdo sem a nossa autorização prévia é proibida.
+
+                </p> 
+        </div>
+
+        <div class="privacy">
+            <h2>Política de Privacidade</h2>
+            <p>Política de Privacidade para o Jornal Online
+                A sua privacidade é uma prioridade para nós. Nossa Política de Privacidade descreve como coletamos, usamos e protegemos as informações pessoais que você nos fornece ao acessar nosso site.
+                
+                1. Coleta de Informações Pessoais
+                Nós coletamos informações pessoais, como nome, endereço de e-mail e dados de navegação, quando você interage com o nosso site. Essas informações podem ser coletadas por meio de formulários de inscrição, newsletters ou quando você nos contata diretamente.
+                
+    
+                5. Segurança das Informações
+                Implementamos medidas de segurança para proteger suas informações pessoais contra acesso não autorizado, uso indevido ou divulgação. No entanto, nenhuma transmissão de dados pela internet pode ser totalmente segura, e não podemos garantir a segurança absoluta das informações.
+                
+                6. Direitos do Usuário
+                Você tem o direito de acessar, corrigir ou excluir suas informações pessoais a qualquer momento. Para exercer esses direitos, entre em contato conosco através dos canais fornecidos no nosso site.
+            </p> 
+        </div>
+
+        <div class="checkbox-container">
+            <label>
+                <input type="checkbox" id="termsAgree" required>
+                Eu concordo com os <a href="footer.html">Termos de Uso</a> e a <a href="footer.html">Política de Privacidade</a>.
+            </label>
+        </div>
+<div>
+    <button class="btn" id="submitBtn" disabled>Confirmar</button>
+    <a href="paginainicial.html"></a>
+</div>
+       
+
+
+    <script>
+        document.getElementById("termsAgree").addEventListener("change", function() {
+            document.getElementById("submitBtn").disabled = !this.checked;
+        });
+
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            alert("Você concordou com os Termos de Uso e a Política de Privacidade.");
+            window.location.href = "paginainicial.html"; 
+        });
+    </script>
+
+</body>
+</html>
+<style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue; 
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  background-image: url("escola.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  z-index: -1; 
+  opacity: 1; 
+}
+
+.container {
+  width: 100%;
+  top: 7%;
+  max-width: 100%;
+  border-radius: 25px;
+ 
+  padding: 60px;
+  background-color:  rgba(173, 216, 230, 0.3); 
+  box-shadow:  rgba(173, 216, 230, 0.1,5);
+
+}
+
+p {
+  line-height: 1.5; 
+  margin-bottom: 15px; 
+  text-align: justify;
+  font-size: 15px;
+  font-weight: bolder;
+  color: black;
+}
+
+      .terms, .privacy {
+          margin-bottom: 20px;
+      }
+      .checkbox-container {
+          margin: 20px 0;
+      }
+      .btn {
+          background-color: skyblue;
+          color: black;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
+      }
+      .btn:hover {
+          background-color: white;
+      }
+      a {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-weight: bolder;
+    }
+  </style>
